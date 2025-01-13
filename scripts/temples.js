@@ -1,4 +1,4 @@
-// JavaScript for hamburger menu and footer dynamic content
+// JavaScript for hamburger menu and footer dynamic content.
 const hamburger = document.getElementById('hamburger');
 const navigation = document.getElementById('navigation');
 
