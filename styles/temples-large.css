@@ -1,0 +1,15 @@
+/* Large screen styles */
+@media (min-width: 768px) {
+    #hamburger {
+        display: none; /* Hide hamburger on large screens */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
