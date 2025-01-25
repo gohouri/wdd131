@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ange Junior Gohouri">
+    <meta name="author" content="Ange Junior Gohouri">
+    <title>WDD 131: Dynamic Web Fundamentals - Ange Junior Gohouri Places Ivory Coast</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo%202:ital,wght@0,300..800;1,300..800&family=Bangers&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ivory Coast</h1>
+        </header>
+
+        <main>
+            <div class="floating-window weather">
+                <h2>Weather</h2>
+                <ul>
+                  <li>Temperature: 28°C</li>
+                  <li>Conditions: Mostly Cloudy</li>
+                  <li>Wind: 13 km/h</li>
+                  <li>Humidity: 75%</li>
+                  <li>Rainfall Probability: 50%</li>
+                </ul>
+                <img src="images/weather.jpeg" alt="Weather Icon" class="weather-icon">
+              </div>
+            <div class="floating-window data">
+                <h2>Data</h2>
+                <ul>
+                  <li>Area: 322,463 sq km</li>
+                  <li>Population: 26,742,000 (2023 estimate)</li>
+                  <li>Capital: Yamoussoukro (political), Abidjan (economic)</li>
+                  <li>Languages: French (official), various indigenous languages</li>
+                  <li>Currency: West African CFA franc (XOF)</li>
+                  <li>Time Zone: UTC+0</li>
+                  <li>Calling Code: +225</li>
+                  <li>Internet TLD: CI</li>
+                </ul>
+              </div>
+            <picture>
+                <source srcset="images/basilique.jpeg" media="(max-width: 767px)">           
+                <source srcset="images/elephant-family.jpg" media="(min-width: 768px)">
+                <img src="images/elephant-family.jpg" alt="Hero Image">      
+            </picture>
+        </main>
+
+        <footer>
+          <p>&copy; <span id="currentyear"></span> ANGE JUNIOR GOHOURI 🌿 Ivory Coast</p>
+          <p id="lastModified"></p>
+        </footer>
+    </div>
+    <script defer src="scripts/getdates.js"></script>
+</body>
+</html>

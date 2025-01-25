@@ -1,5 +1,5 @@
 /* Large screen styles */
-@media (min-width: 770px) {
+@media (min-width: 500px) {
     #hamburger {
         display: none; /* Hide hamburger on large screens */
     }
