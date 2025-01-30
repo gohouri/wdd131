@@ -1,0 +1,111 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #004080;
+    --secondary-color: #e0e0e0;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --header-bg: #00264d;
+    --footer-bg: #003366;
+}
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--header-bg);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+#menu {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: none;
+    background: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    text-align: center;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+figure {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

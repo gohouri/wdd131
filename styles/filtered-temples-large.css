@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none; /* Cache le menu hamburger */
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        margin: 2rem auto;
+        max-width: 1200px;
+    }
+
+    figure {
+        max-width: 100%;
+    }
+}
