@@ -88,6 +88,22 @@ document.addEventListener("DOMContentLoaded", () => {
            area: 16000 ,
            imageUrl:
            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/winter-quarters-nebraska/400x250/winter-quarters-temple-766499-wallpaper.jpg"
+        },
+        {
+          templeName: " Accra Ghana Temple",
+          location: "57 Independence Ave, Accra",
+          dedicated: "2004, January , 11",
+          area: 17500 ,
+          imageUrl:
+          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-detail-249022-2400x1200.jpg"
+        },
+        {
+          templeName: " Anchorage Alaska Temple",
+          location: "13161 Brayton Dr Anchorage, Alaska 99516 United States",
+          dedicated: "1999, January , 10",
+          area: 11937,
+          imageUrl:
+          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/400x250/anchorage-temple-lds-253274-wallpaper.jpg"
         }
       ];
     const main = document.querySelector(".main");
