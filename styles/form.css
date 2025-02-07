@@ -1,0 +1,148 @@
+/* :root {
+
+} */
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #283562;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+main {
+    padding: 1rem 2%;
+    min-height: 20rem;
+    background-color: #e9e9e9;
+}
+
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+/* ========== FORM STYLING ========== */
+
+.wf fieldset {
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: 450px;
+    background-color: #fff;
+}
+
+.wf label:not(.star-rating label) {
+    display: block;
+    padding-top: 1rem;
+    color: #141413;
+    font-size: .9rem;
+}
+
+.wf input[type="text"],
+.wf input[type="date"],
+.wf select
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#2b6391, #253059);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+.wf input[type="submit"]:hover {
+    text-shadow: 1px 1px 1rem #eee;
+}
+
+.wf input[type="submit"]:active {
+    background-image: linear-gradient(#253059, #2b6391);
+}
+
+.wf input:required, select:required {
+    border-bottom: solid 8px rgb(20, 20, 20);
+}
+
+.wf input:required:valid, select:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.optional {
+    font-size: .8rem;
+    color: #1e357e;
+}
+
+/* ========== STARS STYLING ========== */
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+    display: flex;
+    width: 160px;
+    flex-direction: row-reverse;
+    margin: .5rem auto;
+    position: relative;
+    right: 9rem;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #f10e0e;
+    transition: 0.2s ease;
+  }
+  /* .star-rating label:active::before {
+    transform:scale(1.1);
+  } */
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  /* @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  } */
