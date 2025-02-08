@@ -1,3 +1,5 @@
+const productSelect = document.querySelector("#product");
+
 const products = [
     {
       id: "fc-1888",
@@ -25,3 +27,27 @@ const products = [
       averagerating: 5.0
     }
   ];
+
+  function createProductList() {
+    products.forEach(p => {
+        optElement = document.createElement("option");
+        optElement.setAttribute("value", p.id);
+        optElement.innerText = p.name
+
+        productSelect?.appendChild(optElement);
+    });
+  }
+
+  createProductList();
+
+let counter = localStorage.getItem("tally") || 1;
+const counterDisplay = document.querySelector("#reviews");
+
+
+
+function tallyReviews() {
+  counter = localStorage.getItem("tally");
+  counter = Number(counter) + 1;
+  localStorage.setItem("tally", counter);
+  counterDisplay.innerText = counter;
+}
