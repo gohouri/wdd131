@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Abidjan Foot Connect</title>
+    <meta name="description" content="A web form to sign up for selected tournaments.">
+    <meta name="author" content="GOHOURI ANGE JUNIOR">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/tournaments.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Abidjan Foot Connect</h1>
+        <button id="menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="form.html" class="active">Sign Up</a>
+            <a href="tournaments.html">Tournaments</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Sign Up</h2>
+        <form  method="get" action="thanks.html" class="wf">
+            <fieldset>
+                <legend>Player Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="fname" placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" required placeholder="someone@mail.com"></label>
+                <!-- <div>Software Needed</div> -->
+                <label><input type="checkbox" name="adult" value="yes">Over 18 years old</label>
+            </fieldset>
+            <fieldset>
+                <legend>Tournament information</legend>
+                <label>Tournament/Match Day
+                    <select name="tournament" id="tournament" required>
+                        <option value="" disabled selected="selected">Select an Event... &#9662;</option>
+                    </select>
+                </label>
+                <label>Team Code* <input type="text" name="team" required placeholder="ex-1234"></label>
+            </fieldset>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>If you don't have a team type "nt" on the Team Code and we will notify you if there is a team available.</p>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Abidjan Foot Connect | Abidjan, Ivory Coast</p>
+        <p>GOHOURI ANGE JUNIOR</p>
+    </footer>
+</body>
+</html>

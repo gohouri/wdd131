@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  width: auto;
+  min-height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', serif;
+  font-size: 1.75em;
+  line-height: 1.1em;
+  color: #fb5607;
+  text-align: center;
+  padding: 10px;
+  margin: 0 25px;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.25em;
+  padding: 10px;
+  color: #000000;
+  text-align: justify;
+  margin: 0 25px;
+}
+
+nav {
+  background-color: #fb5607;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex-wrap: wrap-reverse;
+}
+nav a {
+  color: #FFFFFF;
+  padding: .5em .75em;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Macondo', serif;
+  font-size: 1em;
+}
+
+nav a:hover {
+  background-color: #ffbe0b;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: 4px 4px 4px #000000;
+}
+
+#logo_link {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #000000;
+}
+
+#hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#hero-box {
+  width: 100%;
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+}
+
+#hero-msg {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero-msg span {
+  display: block;
+}
+
+.join, .book {
+  background-color: #3A86FF;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px;
+  box-shadow: 2px 6px 12px #000000;
+}
+
+.join:hover, .book:hover {
+  color: #3A86FF;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 4px #000000;
+}
+
+.button-box {
+  text-align: center;
+  margin: 55px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3A86FF;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+main, section {
+  text-align: center;
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 25px;
+}
