@@ -49,7 +49,7 @@ const tournaments = [
       phone: "+225 0500553656",
       averagerating: 4.8,
       ages: "all ages",
-      imgurl: "images/field1.webp"
+      imgurl: "Images/field1.webp"
     },
     {
       name: "Yopougon",
@@ -58,7 +58,7 @@ const tournaments = [
       phone: "+225 0759412322",
       averagerating: 4.9,
       ages: "all ages",
-      imgurl: "images/field1.webp"
+      imgurl: "Images/field1.webp"
     },
     {
       name: "Cocody",
@@ -67,7 +67,7 @@ const tournaments = [
       phone: "+225 0125969825",
       averagerating: 4.5,
       ages: "all ages",
-      imgurl: "images/field1.webp"
+      imgurl: "Images/field1.webp"
     },
     {
       name: "Abobo",
@@ -76,7 +76,7 @@ const tournaments = [
       phone: "+225 0158742365",
       averagerating: 4.5,
       ages: "all ages",
-      imgurl: "images/field1.webp"
+      imgurl: "Images/field1.webp"
     },
     {
       name: "Treichville",
@@ -85,7 +85,7 @@ const tournaments = [
       phone: "+225 0789654123",
       averagerating: 5.0,
       ages: "all ages",
-      imgurl: "images/field1.webp"
+      imgurl: "Images/field1.webp"
     }
 ];
 
